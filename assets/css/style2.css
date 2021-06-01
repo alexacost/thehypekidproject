@@ -1,0 +1,50 @@
+#text{
+
+    padding-right: 5px;
+    border-right: .5em solid #fff;
+    animation: blink 1.3s infinite linear;
+  }
+
+ body::before {
+  content: "";
+  position: fixed;
+  background: url("../img/bg.gif") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+    background-color: black;
+    opacity: 0.9
+}
+
+.cv-boton {
+    
+    background-color: #18d26e;
+    
+    border-style: none;
+
+}
+
+.cv-boton-a {
+    color: white;
+    font-family: poppins;
+}
